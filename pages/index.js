@@ -17,6 +17,7 @@ const Font = styled.div`
 const Links = styled.ul`
   list-style: none;
   text-align: center;
+  padding: 0;
   & li {
     display: inline;
     margin-right: 10px;
@@ -52,13 +53,13 @@ class HomePage extends React.Component {
           <title>Citizen Spring</title>
         </Head>
         <center>
-          <Box my={4} width={[1, 1, 1 / 2]}>
+          <Box my={4} mb={5} width={[1, 1, 1 / 2]}>
             <img
               src="/images/citizenspring-logo-flower-transparent-medium.png"
               width="100%"
               style={{ maxWidth: "600px" }}
             />
-            <Box mx={[2, 3, 3]}>
+            <Box mx={[3, 4, 4]}>
               <H1>Our principles</H1>
               <H2>Take initiatives</H2>
               <P>
@@ -92,12 +93,11 @@ class HomePage extends React.Component {
                   <center>
                     <a href="/downloads/citizenspring-form.pdf">
                       <img
-                        src="/images/form-preview-small.png"
+                        src="/images/form-preview.png"
                         width="100%"
                         style={{
-                          maxWidth: "300px",
-                          border: "1px solid #101D0C",
-                          borderRadius: "5px",
+                          maxWidth: "400px",
+                          border: "1px solid #38652a",
                           // boxShadow: '0px 0px 4px rgba(16, 29, 12, 0.5)',
                         }}
                       />
