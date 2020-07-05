@@ -43,6 +43,24 @@ const P = styled.p`
   text-align: left;
 `;
 
+const FileDownload = styled.div`
+  position: relative;
+  max-width: 400px;
+  border: 1px solid #38652a;
+  border-radius: 3px;
+  color: #38652a;
+  &:hover {
+    border: 1px solid #29491d;
+    color: #29491d;
+  }
+  & label {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-weight: bold;
+  }
+`;
+
 class HomePage extends React.Component {
   componentDidMount() {}
 
@@ -53,7 +71,7 @@ class HomePage extends React.Component {
           <title>Citizen Spring</title>
         </Head>
         <center>
-          <Box my={4} mb={5} width={[1, 1, 1 / 2]}>
+          <Box my={4} pb={4} width={[1, 1, 1 / 2]}>
             <img
               src="/images/citizenspring-logo-flower-transparent-medium.png"
               width="100%"
@@ -92,15 +110,10 @@ class HomePage extends React.Component {
                 <Box width={[1, 1, 1 / 3]} mt={[3, 2, 1]}>
                   <center>
                     <a href="/downloads/citizenspring-form.pdf">
-                      <img
-                        src="/images/form-preview.png"
-                        width="100%"
-                        style={{
-                          maxWidth: "400px",
-                          border: "1px solid #38652a",
-                          // boxShadow: '0px 0px 4px rgba(16, 29, 12, 0.5)',
-                        }}
-                      />
+                      <FileDownload>
+                        <img src="/images/form-preview.png" width="100%" />
+                        <label>PDF</label>
+                      </FileDownload>
                     </a>
                   </center>
                 </Box>
