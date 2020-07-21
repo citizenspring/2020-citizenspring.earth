@@ -101,15 +101,34 @@ class HomePage extends React.Component {
               <Flex flexWrap="wrap">
                 <Box width={[1, 1, 2 / 3]}>
                   <P>
-                    Print this form and make your neighbors sign it. Make sure
-                    you co-create this project together. Inform local
-                    authorities but don't wait for their permission. Above all,
-                    have fun! 😊
+                    Print this form (
+                    <a href="/downloads/citizenspring-form-en.pdf">
+                      in English
+                    </a>
+                    ,{" "}
+                    <a href="/downloads/citizenspring-form-fr.pdf">in French</a>
+                    ,{" "}
+                    <a href="/downloads/citizenspring-form-nl.pdf">in Dutch</a>)
+                    and make your neighbors sign it. Make sure you co-create
+                    this project together. Inform local authorities but don't
+                    wait for their permission. Above all, have fun! 😊
+                  </P>
+                  <P>
+                    Here is the{" "}
+                    <a href="/downloads/citizenspring-form-en.pages">
+                      original file
+                    </a>{" "}
+                    if you want to adapt it to your needs (it's in Pages for
+                    Mac, if you make other versions, you can add them to{" "}
+                    <a href="https://github.com/citizenspring/citizenspring.earth/tree/master/public/downloads">
+                      our repository
+                    </a>
+                    ).
                   </P>
                 </Box>
                 <Box width={[1, 1, 1 / 3]} mt={[3, 2, 1]}>
                   <center>
-                    <a href="/downloads/citizenspring-form.pdf">
+                    <a href="/downloads/citizenspring-form-en.pdf">
                       <FileDownload>
                         <img src="/images/form-preview.png" width="100%" />
                         <label>PDF</label>
