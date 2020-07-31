@@ -56,8 +56,11 @@ const FileDownload = styled.div`
   & label {
     position: absolute;
     top: 0;
-    right: 5px;
+    right: 0;
+    padding: 0 5px;
     font-weight: bold;
+    font-size: 11px;
+    background: rgba(255, 255, 255, 0.9);
   }
 `;
 
@@ -99,7 +102,7 @@ class HomePage extends React.Component {
               </P>
               <H1>Start an initiative</H1>
               <Flex flexWrap="wrap">
-                <Box width={[1, 1, 2 / 3]}>
+                <Box width={[1, 1, 2 / 3]} pr={[0, 1, 2]}>
                   <P>
                     Print this form (
                     <a href="/downloads/citizenspring-form-en.pdf">
@@ -137,6 +140,34 @@ class HomePage extends React.Component {
                   </center>
                 </Box>
               </Flex>
+
+              <H1>Organise a play street</H1>
+              <Flex flexWrap="wrap">
+                <Box width={[1, 1, 2 / 3]} pr={[0, 1, 2]}>
+                  <P>
+                    Are you organising a play street? You need a poster? You can
+                    use{" "}
+                    <a href="https://docs.google.com/presentation/d/1mGiE7aEeuEgykauBA1qf-Dy5qC1NT2OWk86q3kN6l90/edit#slide=id.p">
+                      this template
+                    </a>{" "}
+                    for free!
+                  </P>
+                </Box>
+                <Box width={[1, 1, 1 / 3]} mt={[3, 2, 1]}>
+                  <center>
+                    <a href="https://docs.google.com/presentation/d/1mGiE7aEeuEgykauBA1qf-Dy5qC1NT2OWk86q3kN6l90/edit#slide=id.p">
+                      <FileDownload>
+                        <img
+                          src="/images/playstreet-template-preview-medium.png"
+                          width="100%"
+                        />
+                        <label>TEMPLATE</label>
+                      </FileDownload>
+                    </a>
+                  </center>
+                </Box>
+              </Flex>
+
               <Cover>
                 <Font size={36}>Together</Font>
                 <img src="/images/citizens-emoji.png" height={48} />
