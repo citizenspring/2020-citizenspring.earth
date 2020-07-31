@@ -69,6 +69,24 @@ const FileDownload = styled.div`
   }
 `;
 
+const Video = styled.div`
+  margin: 10px 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+`;
+
 class HomePage extends React.Component {
   componentDidMount() {}
 
@@ -147,6 +165,7 @@ class HomePage extends React.Component {
               </Flex>
 
               <H1>Organise a play street</H1>
+
               <Flex flexWrap="wrap">
                 <Box width={[1, 1, 2 / 3]} pr={[0, 1, 2]}>
                   <P>
@@ -172,6 +191,16 @@ class HomePage extends React.Component {
                   </center>
                 </Box>
               </Flex>
+              <Video>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube-nocookie.com/embed/-rdxyNFZ8lk"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </Video>
 
               <Cover>
                 <Font size={36}>Together</Font>
