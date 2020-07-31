@@ -45,6 +45,7 @@ const P = styled.p`
 
 const FileDownload = styled.div`
   position: relative;
+  display: flex;
   max-width: 400px;
   border: 1px solid #38652a;
   border-radius: 3px;
@@ -52,6 +53,10 @@ const FileDownload = styled.div`
   &:hover {
     border: 1px solid #29491d;
     color: #29491d;
+  }
+  & img {
+    width: 100%;
+    height: 100%;
   }
   & label {
     position: absolute;
