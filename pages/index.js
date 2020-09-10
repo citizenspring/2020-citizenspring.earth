@@ -99,11 +99,22 @@ class HomePage extends React.Component {
         </Head>
         <center>
           <Box my={4} pb={4} width={[1, 1, 1 / 2]}>
-            <img
-              src="/images/citizenspring-logo-flower-transparent-medium.png"
-              width="100%"
-              style={{ maxWidth: "300px" }}
-            />
+            <picture>
+              <source
+                type="image/avif"
+                srcset="/images/citizenspring-logo-flower-transparent-medium.avif"
+              />
+              <source
+                type="image/webp"
+                srcset="/images/citizenspring-logo-flower-transparent-medium.webp"
+              />
+              <img
+                alt="Citizen Spring Logo"
+                src="/images/citizenspring-logo-flower-transparent-medium.png"
+                width="100%"
+                style={{ maxWidth: "300px" }}
+              />
+            </picture>
             <Box mx={[3, 4, 4]}>
               <H1>Our principles</H1>
               <H2>Take initiatives</H2>
@@ -174,7 +185,7 @@ class HomePage extends React.Component {
               </P>
               <P>
                 If you've also made a nice template that could easily be reused
-                by others, please share it with the community! Send it to
+                by others, please share it with the community! Send it to{" "}
                 <Link href="https://twitter.com/citizen_spring">
                   @citizen_spring on Twitter
                 </Link>{" "}
