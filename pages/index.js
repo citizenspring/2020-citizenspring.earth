@@ -98,7 +98,7 @@ class HomePage extends React.Component {
           <title>Citizen Spring</title>
         </Head>
         <center>
-          <Box my={4} pb={4} width={[1, 1, 1 / 2]}>
+          <Box my={4} pb={4} width={[1, 1, "900px"]}>
             <picture>
               <source
                 type="image/avif"
@@ -136,8 +136,8 @@ class HomePage extends React.Component {
                 care of each other.
               </P>
               <H1>Start an initiative</H1>
-              <Flex flexWrap="wrap">
-                <Box width={[1, 1, 2 / 3]} pr={[0, 1, 2]}>
+              <Flex>
+                <Box width={[1]} pr={[0, 1, 2]}>
                   <P>
                     Print this form (
                     <a href="/downloads/citizenspring-form-en.pdf">
@@ -164,11 +164,24 @@ class HomePage extends React.Component {
                     ).
                   </P>
                 </Box>
-                <Box width={[1, 1, 1 / 3]} mt={[3, 2, 1]}>
+                <Box width="250px" mt={2} ml={2}>
                   <center>
                     <a href="/downloads/citizenspring-form-en.pdf">
                       <FileDownload>
-                        <img src="/images/form-preview.png" width="100%" />
+                        <picture>
+                          <source
+                            type="image/avif"
+                            srcset="/images/form-preview-medium.avif"
+                          />
+                          <source
+                            type="image/webp"
+                            srcset="/images/form-preview-medium.webp"
+                          />
+                          <img
+                            alt="Playstreet Template"
+                            src="/images/form-preview-medium.png"
+                          />
+                        </picture>
                         <label>PDF</label>
                       </FileDownload>
                     </a>
