@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Box, Flex } from "@rebass/grid";
 import Head from "next/head";
+import Link from "next/link";
 
 const Cover = styled.div`
   margin: 6rem 0 3rem;
@@ -101,7 +102,7 @@ class HomePage extends React.Component {
             <img
               src="/images/citizenspring-logo-flower-transparent-medium.png"
               width="100%"
-              style={{ maxWidth: "600px" }}
+              style={{ maxWidth: "300px" }}
             />
             <Box mx={[3, 4, 4]}>
               <H1>Our principles</H1>
@@ -164,43 +165,97 @@ class HomePage extends React.Component {
                 </Box>
               </Flex>
 
-              <H1>Organise a play street</H1>
+              <H1>Templates</H1>
+              <P>
+                It's always nice to have a poster to put on your door or at the
+                window of the local shops to promote your citizen initiative.
+                Here you can find some templates that you can freely adapt and
+                use. No need to ask for permission! 😊{" "}
+              </P>
+              <P>
+                If you've also made a nice template that could easily be reused
+                by others, please share it with the community! Send it to
+                <Link href="https://twitter.com/citizen_spring">
+                  @citizen_spring on Twitter
+                </Link>{" "}
+                or by <Link href="mailto:info@citizenspring.earth">email</Link>.
+              </P>
+              <Flex flexWrap="wrap" justifyContent="space-around" mt={4}>
+                <Box width="250px" mb={3}>
+                  <Flex flexDirection="column">
+                    <Box>
+                      <center>
+                        <a href="https://docs.google.com/presentation/d/1mGiE7aEeuEgykauBA1qf-Dy5qC1NT2OWk86q3kN6l90/edit#slide=id.p">
+                          <FileDownload>
+                            <picture>
+                              <source
+                                type="image/avif"
+                                srcset="/images/playstreet-template-preview-medium.avif"
+                              />
+                              <source
+                                type="image/webp"
+                                srcset="/images/playstreet-template-preview-medium.webp"
+                              />
+                              <img
+                                alt="Playstreet Template"
+                                src="/images/playstreet-template-preview-medium.jpg"
+                              />
+                            </picture>
 
-              <Flex flexWrap="wrap">
-                <Box width={[1, 1, 2 / 3]} pr={[0, 1, 2]}>
-                  <P>
-                    Are you organising a play street? You need a poster? You can
-                    use{" "}
-                    <a href="https://docs.google.com/presentation/d/1mGiE7aEeuEgykauBA1qf-Dy5qC1NT2OWk86q3kN6l90/edit#slide=id.p">
-                      this template
-                    </a>{" "}
-                    for free!
-                  </P>
+                            <label>TEMPLATE</label>
+                          </FileDownload>
+                        </a>
+                      </center>
+                    </Box>
+                    <Box>
+                      <P>
+                        Open your street to people with a playstreet.{" "}
+                        <a href="https://docs.google.com/presentation/d/1mGiE7aEeuEgykauBA1qf-Dy5qC1NT2OWk86q3kN6l90/edit#slide=id.p">
+                          Poster template
+                        </a>{" "}
+                        (a poster your kids can color!)
+                      </P>
+                    </Box>
+                  </Flex>
                 </Box>
-                <Box width={[1, 1, 1 / 3]} mt={[3, 2, 1]}>
-                  <center>
-                    <a href="https://docs.google.com/presentation/d/1mGiE7aEeuEgykauBA1qf-Dy5qC1NT2OWk86q3kN6l90/edit#slide=id.p">
-                      <FileDownload>
-                        <img
-                          src="/images/playstreet-template-preview-medium.png"
-                          width="100%"
-                        />
-                        <label>TEMPLATE</label>
-                      </FileDownload>
-                    </a>
-                  </center>
+                <Box width="250px">
+                  <Flex flexDirection="column">
+                    <Box>
+                      <center>
+                        <a href="https://docs.google.com/presentation/d/1iV2zWaHhqE4gwahKNT-gggRaOI4cSm3vptMHeuikJxM/edit#slide=id.p">
+                          <FileDownload>
+                            <picture>
+                              <source
+                                type="image/avif"
+                                srcset="/images/kidicalmass-template-preview-medium.avif"
+                              />
+                              <source
+                                type="image/webp"
+                                srcset="/images/kidicalmass-template-preview-medium.webp"
+                              />
+                              <img
+                                alt="Kidical Mass Template"
+                                src="/images/kidicalmass-template-preview-medium.jpg"
+                              />
+                            </picture>
+                            <label>TEMPLATE</label>
+                          </FileDownload>
+                        </a>
+                      </center>
+                    </Box>
+                    <Box>
+                      <P>
+                        Nothing like biking together. The fun of a critical mass
+                        for kids!{" "}
+                        <a href="https://docs.google.com/presentation/d/1iV2zWaHhqE4gwahKNT-gggRaOI4cSm3vptMHeuikJxM/edit#slide=id.p">
+                          Poster template
+                        </a>
+                        .
+                      </P>
+                    </Box>
+                  </Flex>
                 </Box>
               </Flex>
-              <Video>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube-nocookie.com/embed/-rdxyNFZ8lk"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
-              </Video>
 
               <Cover>
                 <Font size={36}>Together</Font>
@@ -208,6 +263,11 @@ class HomePage extends React.Component {
                 <Font size={20}>towards a sustainable future</Font>
               </Cover>
               <Links>
+                <li>
+                  <a href="https://facebook.com/citizenspringmovement/videos">
+                    Videos
+                  </a>
+                </li>
                 <li>
                   <a href="https://facebook.com/citizenspringmovement">
                     Facebook
